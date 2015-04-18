@@ -1,0 +1,27 @@
+<head>
+  <title>chatAppML</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor Lessons!</h1>
+
+  {{> chatRoom}}
+</body>
+
+<template name="chatRoom">
+	{{> messages}}
+	{{> messageInput}}
+</template>
+
+<template name="messages">
+	<ul>
+		{{#each messages}}
+			<li>{{message}}</li>
+		{{/each}}
+	</ul>
+</template>
+
+<template name="messageInput">
+<input placeholder="Enter your message" class="input-message">
+<button type="submit" class="send-message">Send</button>
+</template>
