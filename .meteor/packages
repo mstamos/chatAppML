@@ -7,4 +7,7 @@
 meteor-platform
 autopublish
 insecure
+<<<<<<< HEAD
 momentjs:moment
+=======
+>>>>>>> bf6eac34f845d85cf37fa9443b4b529ddd5bad2a
