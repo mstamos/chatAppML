@@ -1,0 +1,27 @@
+<head>
+  <title>chatappMeetup</title>
+</head>
+
+<body>
+  <h1>Chat App</h1>
+
+  {{> displayMessages}}
+  {{> inputMessage}}
+  
+</body>
+
+
+<template name="displayMessages">
+	<ul>
+		{{#each messagesInCursor}}
+			<li>
+				{{date}} - {{msg}}
+			</li>
+		{{/each}}	
+	</ul>
+</template>
+
+<template name="inputMessage">
+	<input class="write-text">
+	<button class="send-message">Send</button>
+</template>
